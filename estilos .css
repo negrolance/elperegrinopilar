@@ -1,0 +1,384 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* body config*/
+body {
+    flex-direction: column;
+    scroll-behavior: smooth;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    line-height: 1.58em;
+    font-size: x-large;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.header__santeria{
+    background-image: url(./assets/bijouterie/anillo-uno.png);
+    background-size: cover;
+    height: 500px;
+    overflow: visible;
+    align-items: baseline;
+}
+
+.header__santeria--text{
+    font-family: 'Rubik', sans-serif;;
+    text-align: right;
+    color: white;
+    margin-top: 30px;
+    -webkit-text-stroke: 0.0001em rgb(10, 10, 119);
+    text-align: left;
+    font-size: 80px;
+    margin-top: 400px;    
+}
+
+.mainheader__maintitle{
+    color: white;    font-weight:800;
+    font-family: 'Rubik', sans-serif;;
+    background-image: url(./assets/banner.jpg); 
+    height: 500px;
+    overflow: visible;
+    align-items: baseline;
+
+}
+.mainheader__maintitle--text{
+    font-family: 'Rubik', sans-serif;;
+    text-align: left;
+    color: white;
+    margin-top: 120px;
+    -webkit-text-stroke: 0.1px rgb(10, 10, 119);
+    font-size: 4em;
+}    
+
+
+header h1{
+    margin-left: 20px;
+}
+
+.logo{
+    height: 200px;
+    cursor: pointer;
+}
+
+.header__section--libros{
+    background-image: url(./assets/libros/la-madre-de-los-mas-pobres.png);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    overflow: visible;
+    align-items: baseline;
+}
+
+.header__section--estampas{
+    background-image: url(././assets/estampas/estampa-tres.png);
+    background-size: cover;
+    height: 500px;
+    overflow: visible;
+    align-items: baseline;
+}
+.header__section--bijouterie{
+    background-image: url(./assets/bijouterie/llavero-uno.png);
+    background-size: cover;
+    height: 500px;
+    overflow: visible;
+    align-items: baseline;
+}
+.header__section--text{
+    font-family: 'Rubik', sans-serif;;
+    color: white;
+    margin-top: 400px;
+    -webkit-text-stroke: 0.0001em rgb(10, 10, 119);
+    text-align: left;
+    font-size: 80px; 
+}
+/* navegacion*/
+nav {
+    background-color: rgb(10, 10, 122);
+    text-align: center; 
+}
+
+nav ul li{  
+    display: inline;
+    margin: 2em;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    
+}
+nav li a:hover {
+    color: wheat;
+}
+/* termina el nav*/ 
+/* frase antes de secciones*/
+
+main{
+    margin: 20px;
+    padding: 20px;
+}
+.description{
+    text-align: center;
+    color: rgb(10, 10, 122);
+    margin: 50px;
+}
+
+.phrase{ 
+    font-style:italic;
+    font-weight: 700;
+}
+.phrasename{
+    font-weight: bolder;
+    font-size: larger;
+}
+
+
+/* arrancan las secciones*/
+
+
+.p1{
+    width: 60%;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: inline-block;                                        
+    font-size: 20px;
+    color: rgb(10, 10, 119);
+}
+.p2{
+    width: 60%;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: left;
+    display: inline-block;
+    font-size: 20px;
+    color: rgb(10, 10, 119);
+}
+
+main a img{
+    width: 30%;
+    margin-right: 30px;
+    padding-right: 20px; 
+}
+.tituloseccion{
+    color:rgb(10, 10, 122);
+    margin-left: 20px;
+}
+.tituloseccion3{
+    color: rgb(10, 10, 119);
+    margin-top: 20px;
+    font-size: 30px;
+    padding-left: 30px;
+}
+.tituloseccion2{
+    color: rgb(10, 10, 119);
+    margin-top: 50px;
+    font-size: 45px;
+    margin-bottom: 50px;
+    padding-left: 30px;
+}
+
+/* main seccion santeria */
+
+.main__santeria ol{
+    margin: 20px;
+    padding: 20px;
+    list-style-type: none;
+    text-decoration: none;
+}
+.main__santeria li a:hover{
+    color: wheat;
+}
+.main__santeria a{    
+    text-decoration: none;
+    color: rgb(10, 10, 119);
+}
+
+div h2 {
+    color: rgb(10, 10, 119);
+    text-decoration: none;
+}
+
+
+/* main seccion libros*/
+
+.main__libros ol{
+    margin: 20px;
+    padding-left: 60px;
+    list-style-type:disc;
+    display: grid;
+    grid-template-areas: 
+    " libro1 libro2"
+    " libro3 libro4"
+    ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.libro1{
+    grid-area: libro1;
+    width: 100%;
+}
+
+.libro2{
+    grid-area: libro2;
+    width: 100%;
+}
+
+.libro3{
+    grid-area: libro3;
+    width: 100%;
+}
+.libro4{
+    grid-area: libro4;
+    width: 100%;
+}
+
+.img1{
+    width: 60%;
+}
+.img2{
+    width: 60%;
+}
+
+.img3{
+    width: 60%;
+}
+.img4{
+    width: 60%;
+}
+
+
+
+.main__libros li a:hover{
+    color: wheat;
+}
+
+.main__libros a{    
+    text-decoration: none;
+    color: rgb(10, 10, 119);
+}
+
+
+
+/* main seccion estampas*/
+
+.main__section--ul{
+    margin: 20px;
+    list-style-type:disc;
+    display: grid;
+    grid-template-areas: 
+    "estampa1 estampa2"
+    "estampa3 estampa4"
+    ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.estampa1{
+    grid-area: estampa1;
+    width: 100%;
+}
+
+.estampa2{
+    grid-area: estampa2;
+    width: 100%;
+}
+.estampa3{
+    grid-area: estampa3;
+    width: 100%;
+    
+}
+.estampa4{
+    grid-area: estampa4;
+    width: 100%;
+}
+
+.estampa1__img{
+    width: 100%;
+}
+.estampa2__img{
+    width: 100%;
+}
+.estampa3__img{
+    width: 100%;
+}
+.estampa4__img{
+    width: 100%;
+}
+
+
+
+.main__section--ul li a:hover{
+    color: wheat;
+}
+.main__section--ul a{    
+    text-decoration: none;
+    color: rgb(10, 10, 119);
+}
+.libro{    
+    image-resolution: 30px;
+}
+
+main section h3{
+    color: rgb(10, 10, 119);
+    margin-top: 20px;
+    font-size: 30px;
+}
+main section h2{
+    color: rgb(10, 10, 119);
+    margin-top: 35px;
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+.form{
+    color: blue;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+/* main seccion Bijouterie*/
+
+.main__section--ol{
+    margin: 20px;
+    padding: 20px;
+    list-style-type:disc;
+}
+.main__section--ol li a:hover{
+    color: wheat;
+}
+.main__section--ol a{    
+    text-decoration: none;
+    color: rgb(10, 10, 119);
+}
+
+
+.form{
+    color: blue;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.products_bijou{
+    float: right;
+}
+/* footer*/
+
+footer{ 
+    background-color: rgb(10, 10, 122);
+    color: white;
+}
+
+.logosocial{ 
+    width: 2em;
+    margin-right: 20px;
+    margin-left: 30px;
+}
+.footer_socialmedia{
+    display: inline-block;
+    font-size: 0.7em;
+    padding: 20px;
+    list-style-type: none;
+}
