@@ -15,94 +15,30 @@ body {
     flex-wrap: wrap;
 }
 
-
-.header__santeria{
-    background-image: url(./assets/bijouterie/anillo-uno.png);
-    background-size: cover;
-    height: 500px;
-    overflow: visible;
-    align-items: baseline;
-}
-
-.header__santeria--text{
-    font-family: 'Rubik', sans-serif;;
-    text-align: right;
-    color: white;
-    margin-top: 30px;
-    -webkit-text-stroke: 0.0001em rgb(10, 10, 119);
-    text-align: left;
-    font-size: 80px;
-    margin-top: 400px;    
-}
-
-.mainheader__maintitle{
-    color: white;    font-weight:800;
-    font-family: 'Rubik', sans-serif;;
-    background-image: url(./assets/banner.jpg); 
-    height: 500px;
-    overflow: visible;
-    align-items: baseline;
-
-}
-.mainheader__maintitle--text{
-    font-family: 'Rubik', sans-serif;;
-    text-align: left;
-    color: white;
-    margin-top: 120px;
-    -webkit-text-stroke: 0.1px rgb(10, 10, 119);
-    font-size: 4em;
-}    
-
-
-header h1{
-    margin-left: 20px;
-}
-
-.logo{
-    height: 200px;
-    cursor: pointer;
-}
-
-.header__section--libros{
-    background-image: url(./assets/libros/la-madre-de-los-mas-pobres.png);
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-    overflow: visible;
-    align-items: baseline;
-}
-
-.header__section--estampas{
-    background-image: url(././assets/estampas/estampa-tres.png);
-    background-size: cover;
-    height: 500px;
-    overflow: visible;
-    align-items: baseline;
-}
-.header__section--bijouterie{
-    background-image: url(./assets/bijouterie/llavero-uno.png);
-    background-size: cover;
-    height: 500px;
-    overflow: visible;
-    align-items: baseline;
-}
-.header__section--text{
-    font-family: 'Rubik', sans-serif;;
-    color: white;
-    margin-top: 400px;
-    -webkit-text-stroke: 0.0001em rgb(10, 10, 119);
-    text-align: left;
-    font-size: 80px; 
-}
 /* navegacion*/
+.h1header{
+    color: white;
+    font-family:'Rubik', sans-serif;
+    align-content: left;
+    text-align: left;
+    margin-left: 30px;
+    font-size: 35px;
+}    
 nav {
     background-color: rgb(10, 10, 122);
-    text-align: center; 
+    text-align: right;
+    justify-content: center;
 }
 
 nav ul li{  
     display: inline;
     margin: 2em;
+    font-size: 25px;
+}
+
+.navlist {
+    margin-bottom: 15px;
+    margin-top: 15px ;
 }
 
 nav a {
@@ -202,55 +138,6 @@ div h2 {
 }
 
 
-/* main seccion libros*/
-
-.main__libros ol{
-    margin: 20px;
-    padding-left: 60px;
-    list-style-type:disc;
-    display: grid;
-    grid-template-areas: 
-    " libro1 libro2"
-    " libro3 libro4"
-    ;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
-
-.libro1{
-    grid-area: libro1;
-    width: 100%;
-}
-
-.libro2{
-    grid-area: libro2;
-    width: 100%;
-}
-
-.libro3{
-    grid-area: libro3;
-    width: 100%;
-}
-.libro4{
-    grid-area: libro4;
-    width: 100%;
-}
-
-.img1{
-    width: 60%;
-}
-.img2{
-    width: 60%;
-}
-
-.img3{
-    width: 60%;
-}
-.img4{
-    width: 60%;
-}
-
-
 
 .main__libros li a:hover{
     color: wheat;
@@ -262,103 +149,73 @@ div h2 {
 }
 
 
-
-/* main seccion estampas*/
-
-.main__section--ul{
+/* main section grdi start*/
+.main__sectiongrid{
     margin: 20px;
-    list-style-type:disc;
+    margin-left: 50px;
+    margin-bottom: 150px;
+    list-style-type: disc;
     display: grid;
     grid-template-areas: 
-    "estampa1 estampa2"
-    "estampa3 estampa4"
+    "imgli1 imgli2"
+    "imgli3 imgli4"
     ;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
 
-.estampa1{
-    grid-area: estampa1;
+.img1{
+    grid-area: imgli1;
     width: 100%;
 }
 
-.estampa2{
-    grid-area: estampa2;
+.img2{
+    grid-area: imgli2;
     width: 100%;
 }
-.estampa3{
-    grid-area: estampa3;
+.img3{
+    grid-area: imgli3;
     width: 100%;
     
 }
-.estampa4{
-    grid-area: estampa4;
+.img4{
+    grid-area: imgli4;
     width: 100%;
 }
 
-.estampa1__img{
+.img1{
     width: 100%;
 }
-.estampa2__img{
-    width: 100%;
-}
-.estampa3__img{
-    width: 100%;
-}
-.estampa4__img{
+.img2{
     width: 100%;
 }
 
-
-
-.main__section--ul li a:hover{
+.img3{
+    width: 100%;
+}
+.img4{
+    width: 100%;
+}
+.main__sectiongrid li a:hover{
     color: wheat;
 }
-.main__section--ul a{    
+.main__sectiongrid a{    
     text-decoration: none;
     color: rgb(10, 10, 119);
 }
-.libro{    
-    image-resolution: 30px;
-}
-
-main section h3{
-    color: rgb(10, 10, 119);
-    margin-top: 20px;
-    font-size: 30px;
-}
-main section h2{
-    color: rgb(10, 10, 119);
-    margin-top: 35px;
-    font-size: 45px;
-    margin-bottom: 50px;
-}
+/* fin de section grid*/
 .form{
-    color: blue;
+    color: rgb(10, 10, 119);
     font-size: 20px;
     padding-top: 20px;
 }
 
-/* main seccion Bijouterie*/
-
-.main__section--ol{
-    margin: 20px;
-    padding: 20px;
-    list-style-type:disc;
-}
 .main__section--ol li a:hover{
     color: wheat;
 }
 .main__section--ol a{    
     text-decoration: none;
     color: rgb(10, 10, 119);
-}
-
-
-.form{
-    color: blue;
-    font-size: 20px;
-    padding-top: 20px;
 }
 
 .products_bijou{
