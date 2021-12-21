@@ -11,23 +11,41 @@ body {
     font-weight: 400;
     line-height: 1.58em;
     font-size: x-large;
-    display: flex;
     flex-wrap: wrap;
 }
 
+
+
 /* navegacion*/
+
+
+.grillanav{
+    align-content: center;
+    list-style-type: disc;
+    display: grid;
+    grid-template-areas: 
+    "h1 li li li li li"
+    ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
 .h1header{
+    grid-area: h1;
     color: white;
     font-family:'Rubik', sans-serif;
-    align-content: left;
-    text-align: left;
+    text-align: left; 
     margin-left: 30px;
-    font-size: 35px;
+    font-size: 1.5em;
+    align-content: center;
+    padding-top: 15px;
 }    
 nav {
     background-color: rgb(10, 10, 122);
     text-align: right;
     justify-content: center;
+    height: 70px;
+    align-content: center;
 }
 
 nav ul li{  
@@ -116,6 +134,9 @@ main a img{
     padding-left: 30px;
 }
 
+#sectionsanteria{
+    margin-bottom: 100px;
+}
 /* main seccion santeria */
 
 .main__santeria ol{
@@ -183,19 +204,8 @@ div h2 {
     width: 100%;
 }
 
-.img1{
-    width: 100%;
-}
-.img2{
-    width: 100%;
-}
 
-.img3{
-    width: 100%;
-}
-.img4{
-    width: 100%;
-}
+
 .main__sectiongrid li a:hover{
     color: wheat;
 }
@@ -238,4 +248,72 @@ footer{
     font-size: 0.7em;
     padding: 20px;
     list-style-type: none;
+}
+
+/* media*/ 
+
+
+@media only screen and (min-width: 200px) and (max-width: 1350px){
+    nav {
+        flex-direction: column;
+        height: auto;
+        display: flex;
+    }
+    .main__sectiongrid{
+        list-style-type: disc;
+        display: grid;
+        
+        grid-template-areas: 
+        "imgli1" 
+        "imgli2"
+        "imgli3" 
+        "imgli4"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+    }
+    
+    .img1{
+        grid-area: imgli1;
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .img2{
+        grid-area: imgli2;
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .img3{
+        grid-area: imgli3;
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 15px;        
+    }
+    .img4{
+        grid-area: imgli4;
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .tituloseccion{
+        color:rgb(10, 10, 122);
+        margin-left: 2em;
+    }
+    .tituloseccion3{
+        color: rgb(10, 10, 119);
+        margin-top: 20px;
+        font-size: 1.2em;
+        padding-left: 30px;
+    }
+    .tituloseccion2{
+        color: rgb(10, 10, 119);
+        margin-top: 10px;
+        font-size: 1.6em;
+        margin-bottom: 50px;
+        padding-left: 30px;
+    }
+    
 }
