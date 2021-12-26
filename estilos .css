@@ -12,6 +12,7 @@ body {
     line-height: 1.58em;
     font-size: x-large;
     flex-wrap: wrap;
+    background-image: linear-gradient( to bottom,rgba(8, 34, 151, 0.219),white ,white);
 }
 
 
@@ -41,16 +42,18 @@ body {
     padding-top: 15px;
 }    
 nav {
-    background-color: rgb(10, 10, 122);
-    text-align: right;
+    text-align: left;
     justify-content: center;
     height: 70px;
     align-content: center;
 }
 /*--------------------------------------------------*/
 .nav {
-    background-color: rgb(10, 10, 122);
-    color: white;
+    color: white; 
+    text-align: left;
+    justify-content: center;
+    height: 70px;
+    align-content: center;
 }
 .navbar-toggler{
     color: white;
@@ -59,7 +62,7 @@ nav {
     color: white !important;
 }
 .bg-blue {
-    background-color: rgb(10, 10, 122) !important;
+    background-image:linear-gradient( to right,rgb(10, 10, 122),rgb(11, 11, 179)) !important;
     color: white !important;
 }
 .navbar-brand{
@@ -84,7 +87,7 @@ nav ul li{
     margin: 2em;
     font-size: 25px;
     justify-content: left;
-}
+}*/
 /*----------------------------------------------------*/
 nav ul li{  
     display: inline;
@@ -92,22 +95,19 @@ nav ul li{
     font-size: 25px;
     justify-content: left;
 }
-/*
-.navlist {
-    margin-bottom: 15px;
-    margin-top: 15px ;
+
+#navbarmenubotton{
+    transition: all 0.5s;
 }
-/*
-nav a {
-    text-decoration: none;
-    color: white;
-    
+
+#navbarmenubotton:hover{
+    font-weight: bold;
+    font-size: 28px;
+    text-shadow: 0px 0px 30px wheat;
+    text-decoration:underline;
+    text-decoration-color: white;
 }
-nav li a:hover {
-    color: wheat;
-}*/
-/* termina el nav*/ 
-/* frase antes de secciones*/
+
 
 main{
     margin: 20px;
@@ -131,29 +131,31 @@ main{
 /* carrousel*/
 
 #carouselExampleIndicators{
-    width: 50%;
-    background-color: rgba(128, 128, 128, 0.26);
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.24);
     align-content: right;
 }
 
 /* arrancan las secciones*/
 
-
 .p1{
     width: 60%;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 20px;
+    margin-right: 20px;
     display: inline-block;                                        
-    font-size: 20px;
+    font-size: 25px;
     color: rgb(10, 10, 119);
+    align-content:  center;
 }
+
 .p2{
     width: 60%;
     margin-top: 20px;
     margin-left: 20px;
     text-align: left;
     display: inline-block;
-    font-size: 20px;
+    font-size: 25px;
     color: rgb(10, 10, 119);
 }
 
@@ -181,9 +183,64 @@ main a img{
     font-weight: 800;
 }
 
-#sectionsanteria{
+.tituloseccion2{
+    transition: all 0.5s;
+}
+.tituloseccion2:hover{
+    color: rgb(14, 14, 185);
+}
+.tituloseccion1{
+    transition: all 0.5s;
+}
+.tituloseccion1:hover{
+    color: rgb(14, 14, 185);
+}
+.tituloseccion3{
+    transition: all 0.5s;
+}
+.tituloseccion3:hover{
+    color: rgb(39, 39, 236);
+}
+
+.section1{
     margin-bottom: 100px;
 }
+
+.section2{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-auto-rows: minmax(100px, auto);
+    display: grid;
+    grid-template-areas: 
+    "tituloseccion2 tituloseccion2"
+    "p1 carouselExampleIndicators"
+    ;
+}
+
+.section1{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-auto-rows: minmax(100px, auto);
+    display: grid;
+    grid-template-areas: 
+    "tituloseccion2 tituloseccion2"
+    "carouselExampleIndicators p1"
+    ;
+}
+.imgtituloseccion2{
+    grid-area: tituloseccion2;
+    width: 100%;
+}
+#carouselExampleIndicators{
+    grid-area: carouselExampleIndicators;
+    width: 100%;
+}
+.p1{
+    grid-area: p1;
+    width: 90%;
+}
+
+
 /* main seccion santeria */
 
 .main__santeria ol{
@@ -220,6 +277,7 @@ div h2 {
 /* main section grdi start*/
 .main__sectiongrid{
     margin: 20px;
+    margin-top: 30px;
     margin-left: 50px;
     margin-bottom: 150px;
     list-style-type: disc;
@@ -227,6 +285,7 @@ div h2 {
     grid-template-areas: 
     "imgli1 imgli2"
     "imgli3 imgli4"
+    "imgli5 none"
     ;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -235,6 +294,8 @@ div h2 {
 .img1{
     grid-area: imgli1;
     width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .img2{
@@ -244,13 +305,23 @@ div h2 {
 .img3{
     grid-area: imgli3;
     width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
     
 }
 .img4{
     grid-area: imgli4;
     width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
+.img5{
+    grid-area: imgli5;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
 
 
 .main__sectiongrid li a:hover{
@@ -302,10 +373,178 @@ footer{
     list-style-type: none;
 }
 
+#logofooter{
+    align-items: left;
+    width: 10%;
+}
+
 /* media*/ 
 
 
 @media only screen and (min-width: 200px) and (max-width: 480px){
+    #navbarmenubotton{
+        transition: all 0.5s;
+    }
+    
+    #navbarmenubotton:hover{
+        font-weight: bold;
+        font-size: 28px;
+        text-shadow: 0px 0px 30px wheat;
+        text-decoration:underline;
+        text-decoration-color: white;
+    }
+    
+    .navbar-brand{
+        color: white!important ;
+        font-size: 20px;
+        height: auto;
+    }
+    .navbar-toggler-icon{
+        background-color: white !important;
+        border: none;
+        justify-content: right;
+        width: auto;
+    }
+    
+    .bg-blue {
+        background-color: rgb(10, 10, 122) !important;
+        color: white !important;
+        height: auto;
+        width: 100%;
+    }
+    .main__sectiongrid{
+        list-style-type: disc;
+        display: grid;
+        font-size: 20px;
+        grid-template-areas: 
+        "imgli1" 
+        "imgli2"
+        "imgli3" 
+        "imgli4"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+    }
+    
+    .img1{
+        grid-area: imgli1;
+        width: 80%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .img2{
+        grid-area: imgli2;
+        width: 80%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .img3{
+        grid-area: imgli3;
+        width: 80%;
+        margin-top: 15px;
+        margin-bottom: 15px;        
+    }
+    .img4{
+        grid-area: imgli4;
+        width: 80%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .tituloseccion{
+        color:rgb(10, 10, 122);
+        margin-left: 2em;
+    }
+    .tituloseccion3{
+        color: rgb(10, 10, 119);
+        margin-top: 35px;
+        font-size: 1.2em;
+    }
+    .tituloseccion2{
+        color: rgb(10, 10, 119);
+        margin-top: auto;
+        font-size: 35px;
+    }
+    .label{
+        font-size: 10px;
+    }
+    .section2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: minmax(100px, auto);
+        display: grid;
+        grid-template-areas: 
+        "tituloseccion2"
+        "p1" 
+        "carouselExampleIndicators"
+        ;
+    }
+    
+    .section1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: minmax(10px, auto);
+        display: grid;
+        grid-template-areas: 
+        "tituloseccion2 "
+        "carouselExampleIndicators" 
+        "p1"
+        ;
+    }
+    .imgtituloseccion2{
+        grid-area: tituloseccion2;
+        width: 100%;
+    }
+    #carouselExampleIndicators{
+        grid-area: carouselExampleIndicators;
+        width: 100%;
+    }
+    .p1{
+        grid-area: p1;
+        width: 100%;
+    }
+
+    
+    .p1{
+        display: inline-block;                                        
+        font-size: 15px;
+        color: rgb(10, 10, 119);
+        align-content:  left;
+    }
+
+    footer{ 
+    background-color: rgb(10, 10, 122);
+    color: white;
+    }
+    .logosocial{ 
+    width: 2em;
+    margin-right: 10px;
+    margin-left: 30px;
+    }
+    .footer_socialmedia{
+    display: inline-block;
+    font-size: 0.5em;
+    list-style-type: none;
+    }
+}
+
+
+/*---------------------------------*/
+
+
+@media only screen and (min-width: 481px) and (max-width: 720px){
+    #navbarmenubotton{
+        transition: all 0.5s;
+    }
+    
+    #navbarmenubotton:hover{
+        font-weight: bold;
+        font-size: 28px;
+        text-shadow: 0px 0px 30px wheat;
+        text-decoration:underline;
+        text-decoration-color: white;
+    }
+    
     .navbar-brand{
         color: white!important ;
         font-size: 20px;
@@ -320,7 +559,7 @@ footer{
     }
     
     .bg-blue {
-        background-color: rgb(10, 10, 122) !important;
+        background-image: linear-gradient(to right rgb(10, 10, 122), blue) !important;
         color: white !important;
         height: auto;
     }
@@ -375,10 +614,60 @@ footer{
     .tituloseccion2{
         color: rgb(10, 10, 119);
         margin-top: auto;
-        font-size: 20px;
+        font-size: 35px;
     }
+    
+    .tituloseccion2{
+        transition: all 0.5s;
+    }
+    .tituloseccion2:hover{
+        color: rgb(14, 14, 185);
+    }
+
     .label{
         font-size: 10px;
+    }
+
+    .p1{
+        display: inline-block;                                        
+        font-size: 20px;
+        color: rgb(10, 10, 119);
+        align-content:  center;
+    }
+    .section2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: minmax(100px, auto);
+        display: grid;
+        grid-template-areas: 
+        "tituloseccion2"
+        "p1" 
+        "carouselExampleIndicators"
+        ;
+    }
+    
+    .section1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: minmax(100px, auto);
+        display: grid;
+        grid-template-areas: 
+        "tituloseccion2 "
+        "carouselExampleIndicators" 
+        "p1"
+        ;
+    }
+    .imgtituloseccion2{
+        grid-area: tituloseccion2;
+        width: 100%;
+    }
+    #carouselExampleIndicators{
+        grid-area: carouselExampleIndicators;
+        width: 200%;
+    }
+    .p1{
+        grid-area: p1;
+        width: 200%;
     }
 
     footer{ 
@@ -390,6 +679,7 @@ footer{
     margin-right: 10px;
     margin-left: 30px;
     }
+
     .footer_socialmedia{
     display: inline-block;
     font-size: 0.5em;
