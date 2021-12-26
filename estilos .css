@@ -47,18 +47,57 @@ nav {
     height: 70px;
     align-content: center;
 }
+/*--------------------------------------------------*/
+.nav {
+    background-color: rgb(10, 10, 122);
+    color: white;
+}
+.navbar-toggler{
+    color: white;
+}
+.navbar-toggler{
+    color: white !important;
+}
+.bg-blue {
+    background-color: rgb(10, 10, 122) !important;
+    color: white !important;
+}
+.navbar-brand{
+    color: white!important ;
+    font-size: 1.6em;
+    margin: 1em;
+}
+.nav-link{
+    color: white !important;
+}
+.navbar-link:hover{
+    color: wheat !important ;
+}
+.navbar-toggler{
+    background-color: white !important;
+    border: none;
+    justify-content: right;
+}
 
 nav ul li{  
     display: inline;
     margin: 2em;
     font-size: 25px;
+    justify-content: left;
 }
-
+/*----------------------------------------------------*/
+nav ul li{  
+    display: inline;
+    margin: 2em;
+    font-size: 25px;
+    justify-content: left;
+}
+/*
 .navlist {
     margin-bottom: 15px;
     margin-top: 15px ;
 }
-
+/*
 nav a {
     text-decoration: none;
     color: white;
@@ -66,7 +105,7 @@ nav a {
 }
 nav li a:hover {
     color: wheat;
-}
+}*/
 /* termina el nav*/ 
 /* frase antes de secciones*/
 
@@ -89,6 +128,13 @@ main{
     font-size: larger;
 }
 
+/* carrousel*/
+
+#carouselExampleIndicators{
+    width: 50%;
+    background-color: rgba(128, 128, 128, 0.26);
+    align-content: right;
+}
 
 /* arrancan las secciones*/
 
@@ -123,15 +169,16 @@ main a img{
 .tituloseccion3{
     color: rgb(10, 10, 119);
     margin-top: 20px;
-    font-size: 30px;
+    font-size: 50px;
     padding-left: 30px;
 }
 .tituloseccion2{
     color: rgb(10, 10, 119);
-    margin-top: 50px;
-    font-size: 45px;
+    margin-top: 0.1em;
+    font-size: 60px;
     margin-bottom: 50px;
     padding-left: 30px;
+    font-weight: 800;
 }
 
 #sectionsanteria{
@@ -219,6 +266,11 @@ div h2 {
     font-size: 20px;
     padding-top: 20px;
 }
+.form-group{
+    color: rgb(10, 10, 119);
+    font-size: 20px;
+    padding-top: 20px;
+}
 
 .main__section--ol li a:hover{
     color: wheat;
@@ -253,16 +305,29 @@ footer{
 /* media*/ 
 
 
-@media only screen and (min-width: 200px) and (max-width: 1350px){
-    nav {
-        flex-direction: column;
+@media only screen and (min-width: 200px) and (max-width: 480px){
+    .navbar-brand{
+        color: white!important ;
+        font-size: 20px;
+        margin: 10px;
         height: auto;
-        display: flex;
+    }
+    .navbar-toggler-icon{
+        background-color: white !important;
+        border: none;
+        justify-content: right;
+        width: 15px;
+    }
+    
+    .bg-blue {
+        background-color: rgb(10, 10, 122) !important;
+        color: white !important;
+        height: auto;
     }
     .main__sectiongrid{
         list-style-type: disc;
         display: grid;
-        
+        font-size: 20px;
         grid-template-areas: 
         "imgli1" 
         "imgli2"
@@ -275,26 +340,26 @@ footer{
     
     .img1{
         grid-area: imgli1;
-        width: 100%;
+        width: 80%;
         margin-top: 15px;
         margin-bottom: 15px;
     }
     
     .img2{
         grid-area: imgli2;
-        width: 100%;
+        width: 80%;
         margin-top: 15px;
         margin-bottom: 15px;
     }
     .img3{
         grid-area: imgli3;
-        width: 100%;
+        width: 80%;
         margin-top: 15px;
         margin-bottom: 15px;        
     }
     .img4{
         grid-area: imgli4;
-        width: 100%;
+        width: 80%;
         margin-top: 15px;
         margin-bottom: 15px;
     }
@@ -306,14 +371,28 @@ footer{
         color: rgb(10, 10, 119);
         margin-top: 20px;
         font-size: 1.2em;
-        padding-left: 30px;
     }
     .tituloseccion2{
         color: rgb(10, 10, 119);
-        margin-top: 10px;
-        font-size: 1.6em;
-        margin-bottom: 50px;
-        padding-left: 30px;
+        margin-top: auto;
+        font-size: 20px;
     }
-    
+    .label{
+        font-size: 10px;
+    }
+
+    footer{ 
+    background-color: rgb(10, 10, 122);
+    color: white;
+    }
+    .logosocial{ 
+    width: 2em;
+    margin-right: 10px;
+    margin-left: 30px;
+    }
+    .footer_socialmedia{
+    display: inline-block;
+    font-size: 0.5em;
+    list-style-type: none;
+    }
 }
