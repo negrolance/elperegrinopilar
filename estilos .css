@@ -90,9 +90,8 @@ nav ul li{
 /*----------------------------------------------------*/
 nav ul li{  
     display: inline;
-    margin: 2em;
+    margin: 1.5em;
     font-size: 25px;
-    justify-content: left;
 }
 
 #navbarmenubotton{
