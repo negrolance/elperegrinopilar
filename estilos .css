@@ -84,10 +84,9 @@ nav {
 
 nav ul li{  
     display: inline;
-    margin: 2em;
+    margin: 1.5em;
     font-size: 25px;
-    justify-content: left;
-}*/
+}
 /*----------------------------------------------------*/
 nav ul li{  
     display: inline;
