@@ -356,8 +356,8 @@ div h2 {
 }
 /* footer*/
 
-footer{ 
-    background-color: rgb(10, 10, 122);
+.footer{ 
+    background-image: linear-gradient(to right,rgb(10, 10, 122), rgb(24, 24, 184) );
     color: white;
 }
 
@@ -512,7 +512,7 @@ footer{
         align-content:  left;
     }
 
-    footer{ 
+    .footer{ 
     background-color: rgb(10, 10, 122);
     color: white;
     }
@@ -670,7 +670,7 @@ footer{
         width: 200%;
     }
 
-    footer{ 
+    .footer{ 
     background-color: rgb(10, 10, 122);
     color: white;
     }
