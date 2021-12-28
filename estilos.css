@@ -19,28 +19,6 @@ body {
 
 /* navegacion*/
 
-
-.grillanav{
-    align-content: center;
-    list-style-type: disc;
-    display: grid;
-    grid-template-areas: 
-    "h1 li li li li li"
-    ;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-}
-
-.h1header{
-    grid-area: h1;
-    color: white;
-    font-family:'Rubik', sans-serif;
-    text-align: left; 
-    margin-left: 30px;
-    font-size: 1.5em;
-    align-content: center;
-    padding-top: 15px;
-}    
 nav {
     text-align: left;
     justify-content: center;
@@ -48,26 +26,14 @@ nav {
     align-content: center;
 }
 /*--------------------------------------------------*/
-.nav {
-    color: white; 
-    text-align: left;
-    justify-content: center;
-    height: 70px;
-    align-content: center;
-}
-.navbar-toggler{
-    color: white;
-}
-.navbar-toggler{
-    color: white !important;
-}
+
+
 .bg-blue {
     background-image:linear-gradient( to right,rgb(10, 10, 122),rgb(11, 11, 179)) !important;
-    color: white !important;
 }
 .navbar-brand{
     color: white!important ;
-    font-size: 1.6em;
+    font-size: 1.2em;
     margin: 1em;
 }
 .nav-link{
@@ -76,26 +42,11 @@ nav {
 .navbar-link:hover{
     color: wheat !important ;
 }
-.navbar-toggler{
-    background-color: white !important;
-    border: none;
-    justify-content: right;
-}
 
-nav ul li{  
-    display: inline;
-    margin: 1.5em;
-    font-size: 25px;
-}
-/*----------------------------------------------------*/
-nav ul li{  
-    display: inline;
-    margin: 1.5em;
-    font-size: 25px;
-}
 
 #navbarmenubotton{
     transition: all 0.5s;
+    margin: 25px;
 }
 
 #navbarmenubotton:hover{
@@ -397,13 +348,6 @@ div h2 {
         font-size: 20px;
         height: auto;
     }
-    .navbar-toggler-icon{
-        background-color: white !important;
-        border: none;
-        justify-content: right;
-        width: auto;
-    }
-    
     .bg-blue {
         background-color: rgb(10, 10, 122) !important;
         color: white !important;
@@ -548,12 +492,6 @@ div h2 {
         font-size: 20px;
         margin: 10px;
         height: auto;
-    }
-    .navbar-toggler-icon{
-        background-color: white !important;
-        border: none;
-        justify-content: right;
-        width: 15px;
     }
     
     .bg-blue {
