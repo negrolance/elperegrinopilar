@@ -1,0 +1,37 @@
+.tituloseccion{
+    color:rgb(10, 10, 122);
+    margin-left: 20px;
+}
+.tituloseccion3{
+    color: rgb(10, 10, 119);
+    margin-top: 20px;
+    font-size: 50px;
+    padding-left: 30px;
+}
+.tituloseccion2{
+    color: rgb(10, 10, 119);
+    margin-top: 0.1em;
+    font-size: 60px;
+    margin-bottom: 50px;
+    padding-left: 30px;
+    font-weight: 800;
+}
+
+.tituloseccion2{
+    transition: all 0.5s;
+}
+.tituloseccion2:hover{
+    color: rgb(14, 14, 185);
+}
+.tituloseccion1{
+    transition: all 0.5s;
+}
+.tituloseccion1:hover{
+    color: rgb(14, 14, 185);
+}
+.tituloseccion3{
+    transition: all 0.5s;
+}
+.tituloseccion3:hover{
+    color: rgb(39, 39, 236);
+}

@@ -1,0 +1,79 @@
+.main__sectiongrid{
+    margin: 20px;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-bottom: 150px;
+    list-style-type: disc;
+    display: grid;
+    grid-template-areas: 
+    "imgli1 imgli2"
+    "imgli3 imgli4"
+    "imgli5 none"
+    ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.img1{
+    grid-area: imgli1;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.img2{
+    grid-area: imgli2;
+    width: 100%;
+}
+.img3{
+    grid-area: imgli3;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    
+}
+.img4{
+    grid-area: imgli4;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.img5{
+    grid-area: imgli5;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+.main__sectiongrid li a:hover{
+    color: wheat;
+}
+.main__sectiongrid a{    
+    text-decoration: none;
+    color: rgb(10, 10, 119);
+}
+/* fin de section grid*/
+.form{
+    color: rgb(10, 10, 119);
+    font-size: 20px;
+    padding-top: 20px;
+}
+.form-group{
+    color: rgb(10, 10, 119);
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.main__section--ol li a:hover{
+    color: wheat;
+}
+.main__section--ol a{    
+    text-decoration: none;
+    color: rgb(10, 10, 119);
+}
+
+.products_bijou{
+    float: right;
+}
