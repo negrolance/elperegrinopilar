@@ -1,3 +1,31 @@
+$color1: white ;
+$color2: #0e0eb9;
+$color3:wheat;
+$color4: rgb(9, 9, 151);
+$color5: rgb(44, 44, 230);
+$color6: rgba(128, 128, 128, 0.103);
+
+$colorgradient1: linear-gradient(to right, #0a0a7a, #0b0bb3);
+$colorgradient2: linear-gradient( #c2c2fd8c,white,);
+
+$fontsize1: 25PX;
+$fontsize2: 50px; 
+$fontsize3: 60px;
+
+$fontweight1: 400;
+$fontweight2: 600;
+$fontweight3: 700;
+$fontweight4: 800;
+
+$ancho1: 100%;
+$ancho2: 50%;
+
+
+$fontcolors:(
+    red1: rgb(1, 1, 116),
+    red2: rgb(17, 17, 158),
+);
+
 .main__sectiongrid{
     margin: 20px;
     margin-top: 30px;
@@ -52,26 +80,26 @@
 }
 .main__sectiongrid a{    
     text-decoration: none;
-    color: rgb(10, 10, 119);
+    color: $color4(10, 10, 119);
 }
 /* fin de section grid*/
 .form{
-    color: rgb(10, 10, 119);
-    font-size: 20px;
+    color: $color4;
+    font-size: $fontsize1;
     padding-top: 20px;
 }
 .form-group{
-    color: rgb(10, 10, 119);
-    font-size: 20px;
+    color: $color4;
+    font-size: $fontsize1;
     padding-top: 20px;
 }
 
 .main__section--ol li a:hover{
-    color: wheat;
+    color: $color3;
 }
 .main__section--ol a{    
     text-decoration: none;
-    color: rgb(10, 10, 119);
+    color: $color4;
 }
 
 .products_bijou{

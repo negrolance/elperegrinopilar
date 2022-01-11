@@ -1,36 +1,64 @@
+$color1: white ;
+$color2: #0e0eb9;
+$color3:wheat;
+$color4: rgb(9, 9, 151);
+$color5: rgb(44, 44, 230);
+$color6: rgba(128, 128, 128, 0.103);
+
+$colorgradient1: linear-gradient(to right, #0a0a7a, #0b0bb3);
+$colorgradient2: linear-gradient( #c2c2fd8c,white,);
+
+$fontsize1: 25PX;
+$fontsize2: 50px; 
+$fontsize3: 60px;
+
+$fontweight1: 400;
+$fontweight2: 600;
+$fontweight3: 700;
+$fontweight4: 800;
+
+$ancho1: 100%;
+$ancho2: 50%;
+
+
+$fontcolors:(
+    red1: rgb(1, 1, 116),
+    red2: rgb(17, 17, 158),
+);
+
 @media only screen and (min-width: 481px) and (max-width: 720px){
     #navbarmenubotton{
         transition: all 0.5s;
     }
     
     #navbarmenubotton:hover{
-        font-weight: bold;
-        font-size: 28px;
-        text-shadow: 0px 0px 30px wheat;
+        font-weight: $fontweight3;
+        font-size: $fontsize1;
+        text-shadow: 0px 0px 30px $color3;
         text-decoration:underline;
-        text-decoration-color: white;
+        text-decoration-color: $color1;
     }
     
     .navbar-brand{
-        color: white!important ;
-        font-size: 20px;
+        color: $color1!important ;
+        font-size: $fontsize1;
         margin: 10px;
         height: auto;
     }
 
     .navbar-toggler{
-        background-color: white;
+        background-color: $color1;
     }
     
     .bg-blue {
-        background-image: linear-gradient(to right rgb(10, 10, 122), blue) !important;
-        color: white !important;
+        background-image: linear-gradient(to right $colorgradient1) !important;
+        color: $color1 !important;
         height: auto;
     }
     .main__sectiongrid{
         list-style-type: disc;
         display: grid;
-        font-size: 20px;
+        font-size: $fontsize1;
         grid-template-areas: 
         "imgli1" 
         "imgli2"
@@ -67,25 +95,25 @@
         margin-bottom: 15px;
     }
     .tituloseccion{
-        color:rgb(10, 10, 122);
+        color:$color4;
         margin-left: 2em;
     }
     .tituloseccion3{
-        color: rgb(10, 10, 119);
+        color:$color4;
         margin-top: 20px;
-        font-size: 1.2em;
+        font-size: $fontsize2;
     }
     .tituloseccion2{
-        color: rgb(10, 10, 119);
+        color: $color4;
         margin-top: auto;
-        font-size: 35px;
+        font-size: $fontsize2;
     }
     
     .tituloseccion2{
         transition: all 0.5s;
     }
     .tituloseccion2:hover{
-        color: rgb(14, 14, 185);
+        color: $color5;
     }
 
     .label{
@@ -96,13 +124,13 @@
         font-size: 20px;
     }
     .phrasename{
-        font-size: 25px;
+        font-size: $fontsize1;
     }
 
     .p1{
         display: inline-block;                                        
         font-size: 20px;
-        color: rgb(10, 10, 119);
+        color: $color4;
         align-content:  center;
     }
     .section2{
@@ -142,8 +170,8 @@
     }
 
     .footer{ 
-    background-color: rgb(10, 10, 122);
-    color: white;
+    background-color: $color4;
+    color: $color1;
     }
     .logosocial{ 
     width: 2em;
