@@ -12,7 +12,7 @@ body {
   line-height: 1.58em;
   font-size: x-large;
   flex-wrap: wrap;
-  background-image: linear-gradient(to bottom, rgba(8, 34, 151, 0.219), white, white);
+  background-image: linear-gradient(#c2c2fd8c, white);
   /*background-image: linear-gradient( to bottom,rgba(8, 34, 151, 0.219),white ,white)*/
 }
 
@@ -23,14 +23,13 @@ nav {
   align-content: center;
 }
 
-/*--------------------------------------------------*/
 .bg-blue {
   background-image: linear-gradient(to right, #0a0a7a, #0b0bb3) !important;
 }
 
 .navbar-brand {
   color: white !important;
-  font-size: 1.2em;
+  font-size: 25PX;
   margin: 1em;
 }
 
@@ -39,7 +38,7 @@ nav {
 }
 
 .navbar-link:hover {
-  color: wheat !important;
+  color: white !important;
 }
 
 #navbarmenubotton {
@@ -49,26 +48,26 @@ nav {
 
 #navbarmenubotton:hover {
   font-weight: bold;
-  font-size: 28px;
+  font-size: 25PX;
   text-shadow: 0px 0px 30px wheat;
   text-decoration: underline;
   text-decoration-color: white;
 }
 
 .tituloseccion {
-  color: #0a0a7a;
+  color: white;
   margin-left: 20px;
 }
 
 .tituloseccion3 {
-  color: #0a0a77;
+  color: white;
   margin-top: 20px;
   font-size: 50px;
   padding-left: 30px;
 }
 
 .tituloseccion2 {
-  color: #0a0a77;
+  color: #090997;
   margin-top: 0.1em;
   font-size: 60px;
   margin-bottom: 50px;
@@ -89,7 +88,7 @@ nav {
 }
 
 .tituloseccion1:hover {
-  color: #0e0eb9;
+  color: #090997 14, 14, 185;
 }
 
 .tituloseccion3 {
@@ -97,7 +96,7 @@ nav {
 }
 
 .tituloseccion3:hover {
-  color: #2727ec;
+  color: #2c2ce6;
 }
 
 .main__sectiongrid {
@@ -524,7 +523,7 @@ main {
 
 .description {
   text-align: center;
-  color: #0a0a7a;
+  color: #0e0eb9;
   margin: 50px;
 }
 
@@ -541,19 +540,19 @@ main {
 /* carrousel*/
 #carouselExampleIndicators {
   width: 100%;
-  background-color: rgba(128, 128, 128, 0.24);
+  background-color: rgba(128, 128, 128, 0.103);
   align-content: right;
 }
 
 /* arrancan las secciones*/
 .p1 {
-  width: 60%;
+  width: 50%;
   margin-top: 10px;
   margin-left: 20px;
   margin-right: 20px;
   display: inline-block;
-  font-size: 25px;
-  color: #0a0a77;
+  font-size: 25PX;
+  color: #0e0eb9;
   align-content: center;
 }
 
@@ -563,8 +562,8 @@ main {
   margin-left: 20px;
   text-align: left;
   display: inline-block;
-  font-size: 25px;
-  color: #0a0a77;
+  font-size: 25PX;
+  color: #0e0eb9;
 }
 
 main a img {
@@ -622,11 +621,11 @@ main a img {
 
 .main__santeria a {
   text-decoration: none;
-  color: #0a0a77;
+  color: #0e0eb9;
 }
 
 div h2 {
-  color: #0a0a77;
+  color: white;
   text-decoration: none;
 }
 
@@ -636,20 +635,20 @@ div h2 {
 
 .main__libros a {
   text-decoration: none;
-  color: #0a0a77;
+  color: white;
 }
 
 /* main section grdi start*/
 /* fin de section grid*/
 .form {
-  color: #0a0a77;
-  font-size: 20px;
+  color: #090997;
+  font-size: 25PX;
   padding-top: 20px;
 }
 
 .form-group {
-  color: #0a0a77;
-  font-size: 20px;
+  color: #090997;
+  font-size: 25PX;
   padding-top: 20px;
 }
 
@@ -659,11 +658,21 @@ div h2 {
 
 .main__section--ol a {
   text-decoration: none;
-  color: #0a0a77;
+  color: white;
 }
 
 .products_bijou {
   float: right;
+}
+
+#btn--red1 {
+  color: #030350;
+  width: 300px;
+}
+
+#btn--red2 {
+  color: blue;
+  width: 300px;
 }
 
 /*# sourceMappingURL=estilos.css.map */

@@ -1,25 +1,43 @@
+$color1: white ;
+$color2: #0e0eb9;
+$color3:wheat;
+$color4: rgb(9, 9, 151);
+$color5: rgb(44, 44, 230);
+
+$colorgradient1: linear-gradient(to right, #0a0a7a, #0b0bb3);
+$colorgradient2: linear-gradient( #c2c2fd8c,white,);
+$colorgradient3: linear-gradient( to right,rgb(10, 10, 122),rgb(11, 11, 179));
+
+$fontsize1: 25PX;
+$fontsize2: 50px; 
+$fontsize3: 60px;
+
+$fontweight1: 400;
+$fontweight2: 600;
+$fontweight3: 700;
+$fontweight4: 800;
+
+
 nav {
     text-align: left;
     justify-content: center;
     height: 70px;
     align-content: center;
 }
-/*--------------------------------------------------*/
-
 
 .bg-blue {
-    background-image:linear-gradient( to right,rgb(10, 10, 122),rgb(11, 11, 179)) !important;
+    background-image:$colorgradient3 !important;
 }
 .navbar-brand{
-    color: white!important ;
-    font-size: 1.2em;
+    color: $color1 !important ;
+    font-size: $fontsize1;
     margin: 1em;
 }
 .nav-link{
-    color: white !important;
+    color:$color1 !important;
 }
 .navbar-link:hover{
-    color: wheat !important ;
+    color:$color1 !important ;
 }
 
 
@@ -30,9 +48,9 @@ nav {
 
 #navbarmenubotton:hover{
     font-weight: bold;
-    font-size: 28px;
-    text-shadow: 0px 0px 30px wheat;
+    font-size: $fontsize1;
+    text-shadow: 0px 0px 30px $color3;
     text-decoration:underline;
-    text-decoration-color: white;
+    text-decoration-color: $color1;
 }
 

@@ -1,37 +1,66 @@
+$color1: white ;
+$color2: #0e0eb9;
+$color3:wheat;
+$color4: rgb(9, 9, 151);
+$color5: rgb(44, 44, 230);
+$color6: rgba(128, 128, 128, 0.103);
+
+$colorgradient1: linear-gradient(to right, #0a0a7a, #0b0bb3);
+$colorgradient2: linear-gradient( #c2c2fd8c,white,);
+
+$fontsize1: 25PX;
+$fontsize2: 50px; 
+$fontsize3: 60px;
+
+$fontweight1: 400;
+$fontweight2: 600;
+$fontweight3: 700;
+$fontweight4: 800;
+
+$ancho1: 100%;
+$ancho2: 50%;
+
+
+$redes:(
+    red1: rgb(3, 3, 80),
+    red2: blue,
+);
+
+
 .tituloseccion{
-    color:rgb(10, 10, 122);
+    color: $color1;
     margin-left: 20px;
 }
 .tituloseccion3{
-    color: rgb(10, 10, 119);
+    color: $color1;
     margin-top: 20px;
-    font-size: 50px;
+    font-size: $fontsize2;
     padding-left: 30px;
 }
 .tituloseccion2{
-    color: rgb(10, 10, 119);
+    color:$color4;
     margin-top: 0.1em;
-    font-size: 60px;
+    font-size: $fontsize3;
     margin-bottom: 50px;
     padding-left: 30px;
-    font-weight: 800;
+    font-weight: $fontweight4;
 }
 
 .tituloseccion2{
     transition: all 0.5s;
 }
 .tituloseccion2:hover{
-    color: rgb(14, 14, 185);
+    color: $color2;
 }
 .tituloseccion1{
     transition: all 0.5s;
 }
 .tituloseccion1:hover{
-    color: rgb(14, 14, 185);
+    color: $color4(14, 14, 185);
 }
 .tituloseccion3{
     transition: all 0.5s;
 }
 .tituloseccion3:hover{
-    color: rgb(39, 39, 236);
+    color: $color5;
 }

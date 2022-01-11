@@ -1,8 +1,30 @@
-$color1: red ;
+$color1: white ;
+$color2: #0e0eb9;
+$color3:wheat;
+$color4: rgb(9, 9, 151);
+$color5: rgb(44, 44, 230);
+$color6: rgba(128, 128, 128, 0.103);
 
-$color2: linear-gradient( to bottom,rgba(8, 34, 151, 0.219),white ,white);
+$colorgradient1: linear-gradient(to right, #0a0a7a, #0b0bb3);
+$colorgradient2: linear-gradient( #c2c2fd8c,white,);
+
+$fontsize1: 25PX;
+$fontsize2: 50px; 
+$fontsize3: 60px;
+
+$fontweight1: 400;
+$fontweight2: 600;
+$fontweight3: 700;
+$fontweight4: 800;
+
+$ancho1: 100%;
+$ancho2: 50%;
 
 
+$fontcolors:(
+    red1: rgb(3, 3, 80),
+    red2: rgb(10, 10, 145),
+);
 
 *{
     margin: 0;
@@ -15,11 +37,11 @@ body {
     flex-direction: column;
     scroll-behavior: smooth;
     font-family: 'Mulish', sans-serif;
-    font-weight: 400;
+    font-weight: $fontweight1;
     line-height: 1.58em;
     font-size: x-large;
     flex-wrap: wrap;
-    background-image: $color2 ;
+    background-image: $colorgradient2;
     /*background-image: linear-gradient( to bottom,rgba(8, 34, 151, 0.219),white ,white)*/;
 }
 
@@ -37,13 +59,13 @@ main{
 }
 .description{
     text-align: center;
-    color: rgb(10, 10, 122);
+    color: $color2;
     margin: 50px;
 }
 
 .phrase{ 
     font-style:italic;
-    font-weight: 700;
+    font-weight: $fontweight3;
 }
 .phrasename{
     font-weight: bolder;
@@ -54,20 +76,20 @@ main{
 
 #carouselExampleIndicators{
     width: 100%;
-    background-color: rgba(128, 128, 128, 0.24);
+    background-color: $color6;
     align-content: right;
 }
 
 /* arrancan las secciones*/
 
 .p1{
-    width: 60%;
+    width: ($ancho1)-($ancho2);
     margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
     display: inline-block;                                        
-    font-size: 25px;
-    color: rgb(10, 10, 119);
+    font-size: $fontsize1;
+    color: $color2;
     align-content:  center;
 }
 
@@ -77,8 +99,8 @@ main{
     margin-left: 20px;
     text-align: left;
     display: inline-block;
-    font-size: 25px;
-    color: rgb(10, 10, 119);
+    font-size: $fontsize1;
+    color: $color2;
 }
 
 main a img{
@@ -135,27 +157,27 @@ main a img{
     text-decoration: none;
 }
 .main__santeria li a:hover{
-    color: wheat;
+    color: $color3;
 }
 .main__santeria a{    
     text-decoration: none;
-    color: rgb(10, 10, 119);
+    color: $color2;
 }
 
 div h2 {
-    color: rgb(10, 10, 119);
+    color:$color1;
     text-decoration: none;
 }
 
 
 
 .main__libros li a:hover{
-    color: wheat;
+    color: $color3;
 }
 
 .main__libros a{    
     text-decoration: none;
-    color: rgb(10, 10, 119);
+    color: $color1;
 }
 
 
@@ -163,25 +185,40 @@ div h2 {
 
 /* fin de section grid*/
 .form{
-    color: rgb(10, 10, 119);
-    font-size: 20px;
+    color: $color4;
+    font-size: $fontsize1;
     padding-top: 20px;
 }
 .form-group{
-    color: rgb(10, 10, 119);
-    font-size: 20px;
+    color: $color4;
+    font-size: $fontsize1;
     padding-top: 20px;
 }
 
 .main__section--ol li a:hover{
-    color: wheat;
+    color: $color3;
 }
 .main__section--ol a{    
     text-decoration: none;
-    color: rgb(10, 10, 119);
+    color: $color1;
 }
 
 .products_bijou{
     float: right;
 }
 
+@each $red, $color in $redes {
+    #btn--#{$red} {
+    color: $color;
+    width: 300px;
+    }
+    
+}
+
+@each $red, $color in $fontcolors {
+    #btn--#{$red} {
+    color: $color;
+    width: 300px;
+    }
+    
+}
