@@ -22,9 +22,12 @@ $ancho2: 50%;
 
 
 $fontcolors:(
-    red1: rgb(3, 3, 80),
-    red2: rgb(10, 10, 145),
+    red1: rgb(1, 1, 116),
+    red2: rgb(17, 17, 158),
 );
+
+
+
 
 *{
     margin: 0;
@@ -218,7 +221,6 @@ div h2 {
 @each $red, $color in $fontcolors {
     #btn--#{$red} {
     color: $color;
-    width: 300px;
     }
     
 }
