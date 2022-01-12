@@ -180,8 +180,8 @@ nav {
 }
 
 .footer {
-  background-image: linear-gradient(to right, linear-gradient(to right, #0a0a7a, #0b0bb3));
-  color: #090997;
+  background-image: linear-gradient(to right, #0a0a7a, #0b0bb3);
+  color: white;
 }
 
 .logosocial {

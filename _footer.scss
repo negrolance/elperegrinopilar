@@ -27,8 +27,8 @@ $fontcolors:(
 );
 
 .footer{ 
-    background-image: linear-gradient(to right,$colorgradient1);
-    color: $color4;
+    background-image: $colorgradient1;
+    color: $color1;
 }
 
 .logosocial{ 
