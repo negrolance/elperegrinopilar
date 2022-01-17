@@ -21,10 +21,11 @@ $ancho1: 100%;
 $ancho2: 50%;
 
 
-$redes:(
-    red1: rgb(3, 3, 80),
-    red2: blue,
+$fontcolors:(
+    red1: rgb(1, 1, 116),
+    red2: rgb(17, 17, 158),
 );
+
 
 
 .tituloseccion{
@@ -32,7 +33,7 @@ $redes:(
     margin-left: 20px;
 }
 .tituloseccion3{
-    color: $color1;
+    color: $color2;
     margin-top: 20px;
     font-size: $fontsize2;
     padding-left: 30px;
