@@ -210,14 +210,6 @@ div h2 {
     float: right;
 }
 
-@each $red, $color in $redes {
-    #btn--#{$red} {
-    color: $color;
-    width: 300px;
-    }
-    
-}
-
 @each $red, $color in $fontcolors {
     #btn--#{$red} {
     color: $color;
